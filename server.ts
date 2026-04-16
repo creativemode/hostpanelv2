@@ -19,7 +19,7 @@ import userRoutes from './server/routes/users';
 import databaseRoutes from './server/routes/databases';
 import backupRoutes from './server/routes/backups';
 
-const __filename = import.meta.url ? fileURLToPath(import.meta.url) : '';
+const __filename = (import.meta.url && import.meta.url.startsWith('file:')) ? fileURLToPath(import.meta.url) : '';
 const __dirname = __filename ? path.dirname(__filename) : process.cwd();
 
 async function startServer() {

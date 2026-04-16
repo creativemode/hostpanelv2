@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-const __filename = import.meta.url ? fileURLToPath(import.meta.url) : '';
+const __filename = (import.meta.url && import.meta.url.startsWith('file:')) ? fileURLToPath(import.meta.url) : '';
 const __dirname = __filename ? path.dirname(__filename) : process.cwd();
 
 const router = express.Router();
