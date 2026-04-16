@@ -1,0 +1,6 @@
+{
+  "name": "HostPanel",
+  "description": "A comprehensive hosting management panel for managing domains, databases, email accounts, and file systems with built-in application installers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
